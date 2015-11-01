@@ -6,9 +6,11 @@ def loop_iterator(number_of_times)
   loop do
     puts "#{phrase}"
     loop_iterator += 1
-    break if loop_iterator == 7
+    break if loop_iterator >= number_of_times
   end
 end
+
+
   # Code your solution here using the "loop" keyword to puts out the below phrase
   # This and all the other methods take an argument of an integer 
   # The integer is the number of times the loops should puts out the phrase
@@ -28,7 +30,7 @@ end
 def while_iterator(number_of_times)
   counter = 1
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  while counter <= 7
+  while counter <= number_of_times
     puts "#{phrase}"
     counter += 1
   end
@@ -37,7 +39,7 @@ end
 def until_iterator(number_of_times)
   counter = 0
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  until counter == 7
+  until counter == number_of_times
     puts "#{phrase}"
     counter += 1
   end
