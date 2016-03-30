@@ -8,35 +8,67 @@ def loop_iterator(number_of_times)
   #   correct number of times?
   # Maybe we should keep count of the number of times we've puts out the 
   #  phrase and break when the counter hits the appropriate number...
-  phrase = "Welcome to Flatiron School's Web Development Course!"
+    number_of_times = 0
+    loop do number_of_times
+      phrase = "Welcome to Flatiron School's Web Development Course!"
+     puts phrase
+     number_of_times += 1
+     break if number_of_times == 7
+     end   
+
+   
   
 end
 
 def times_iterator(number_of_times)
   # code your solution here using the "times" keyword
-  phrase = "Welcome to Flatiron School's Web Development Course!"
+  number_of_times.times do 
+    
   
+  phrase = "Welcome to Flatiron School's Web Development Course!"
+  puts phrase
+  end
 end
 
 def while_iterator(number_of_times)
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
+  number_of_times = 0
+  while number_of_times < 7
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  puts phrase
+  number_of_times += 1
+end
 end
 
 def until_iterator(number_of_times)
   # code your solution here using the "until" keyword
   # hint: use a counter to tell the until loop when to stop!
+   number_of_times = 0
+   until number_of_times == 7
   phrase = "Welcome to Flatiron School's Web Development Course!"
+  puts phrase   
+   number_of_times += 1 
+   end
+  
 
 end
 
 def for_iterator(number_of_times)
   # code your solution here using the "for" keyword
-  # remember that `for` requires a range of numbers. How can we turn our number into a range?
-  
+     range = 1..number_of_times
   phrase = "Welcome to Flatiron School's Web Development Course!"
+  for x in range do
   
+ puts phrase
+
 end
 
+
+end
+loop_iterator(7)
+times_iterator(7)
+until_iterator(7)
+while_iterator(7)
+loop_iterator(7)
+for_iterator(7)
