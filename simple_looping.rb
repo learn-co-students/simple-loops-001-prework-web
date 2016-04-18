@@ -1,3 +1,15 @@
+def loop_iterator(number_of_times)
+ i = 1
+ loop do 
+      phrase = "Welcome to Flatiron School's Web Development Course!"
+      puts "#{phrase}"
+      i+=1;
+      if i > number_of_times then
+        break 
+    end
+  end
+end
+
 def until_iterator(number_of_times)
     i= 0
     until i < number_of_times do
