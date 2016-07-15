@@ -1,31 +1,41 @@
 def loop_iterator(number_of_times)
-  7.times do# Code your solution here using the "loop" keyword to puts out the below phrase
-  puts "Welcome to Flatiron School's Web Development Course!"# This and all the other methods take an argument of an integer 
-  end 
+    phrase = 0
+  while phrase < number_of_times
+    puts "Welcome to Flatiron School's Web Development Course!"
+    phrase += 1
+  end
 end
+loop_iterator(7)
 
 def times_iterator(number_of_times)
-  7.times do# code your solution here using the "times" keyword
+  number_of_times.times do # code your solution here using the "times" keyword
   puts "Welcome to Flatiron School's Web Development Course!"
   end
 end
+loop_iterator(7)
+
 def while_iterator(number_of_times)
-   7.times do# code your solution here using the "times" keyword
-  puts "Welcome to Flatiron School's Web Development Course!"
-  # code your solution here using the "while" keyword
- 
- end
+    phrase = 0
+  while phrase < number_of_times
+    puts "Welcome to Flatiron School's Web Development Course!"
+    phrase += 1
+  end
 end
+while_iterator(7)
 
 def until_iterator(number_of_times)
-  7.times do# code your solution here using the "times" keyword
-  puts "Welcome to Flatiron School's Web Development Course!"# code your solution here using the "until" keyword
-  # hint: use a counter to tell the until loop when to stop!
-end
-end
-def for_iterator(number_of_times)
-  for number_of_times in 1..7# code your solution here using the "for" keyword
-  puts "Welcome to Flatiron School's Web Development Course!"
+    phrase = 0
+  until phrase == number_of_times
+    puts "Welcome to Flatiron School's Web Development Course!"
+    phrase += 1
   end
 end
+until_iterator(7)
+
+def for_iterator(number_of_times)
+  for counter in 1..7 do
+    puts "Welcome to Flatiron School's Web Development Course!"
+  end
+end
+for_iterator(7)
 
