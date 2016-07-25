@@ -12,8 +12,8 @@ end
 end
 
 
-def times_iterator 
-  7.times do
+def times_iterator (x)
+  x.times do
   puts "Welcome to Flatiron School's Web Development Course!"
 end
 end
