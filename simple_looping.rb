@@ -1,6 +1,5 @@
 # REMEMBER: print your output to the terminal using 'puts'
 
-def loop_iterator(number_of_times)
   # Code your solution here using the "loop" keyword to puts out the below phrase
   # This and all the other methods take an argument of an integer 
   # The integer is the number of times the loops should puts out the phrase
@@ -8,35 +7,72 @@ def loop_iterator(number_of_times)
   #   correct number of times?
   # Maybe we should keep count of the number of times we've puts out the 
   #  phrase and break when the counter hits the appropriate number...
-  phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+
+def loop_iterator(number_of_times) 
+    phrase = "Welcome to Flatiron School's Web Development Course!" 
+    loopcounter = 0
+    loop do  
+      puts phrase
+      loopcounter += 1 
+      if loopcounter == number_of_times
+        break
+    end 
+  end
 end
 
+
 def times_iterator(number_of_times)
-  # code your solution here using the "times" keyword
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  timescounter = 0
+  number_of_times.times do 
+    puts phrase
+    timescounter += 1
+  end
 end
+
 
 def while_iterator(number_of_times)
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  whilecounter = 0 
+  while whilecounter < number_of_times
+    puts phrase
+    whilecounter = whilecounter + 1
+    if whilecounter == number_of_times
+      break
+    end
+  end
 end
+
+
 
 def until_iterator(number_of_times)
   # code your solution here using the "until" keyword
   # hint: use a counter to tell the until loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
+  untilcounter = 0 
+  until untilcounter == number_of_times
+  puts phrase
+  untilcounter = untilcounter + 1 
+end
+
+
 
 end
 
 def for_iterator(number_of_times)
   # code your solution here using the "for" keyword
   # remember that `for` requires a range of numbers. How can we turn our number into a range?
-  
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  forcounter = 0...number_of_times
+  for number_of_times in forcounter   
+    puts phrase
+  end 
 end
+
+
+
+
+
 
